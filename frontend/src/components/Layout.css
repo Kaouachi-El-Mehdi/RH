@@ -1,0 +1,6 @@
+.layout-container { min-height: 100vh; }
+.sidebar { width: 220px; min-height: 100vh; }
+.sidebar-header { background: #fff; }
+.nav-link.active { box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-radius: 6px; }
+.header { height: 56px; }
+.content-area { min-height: calc(100vh - 56px); }
