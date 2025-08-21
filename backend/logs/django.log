@@ -1,0 +1,389 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 10781
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2117
+Watching for file changes with StatReloader
+Unauthorized: /api/
+"GET /api/?id=aa4a1285-26e4-42bb-9165-19d55a688042&vscodeBrowserReqId=1755717934756 HTTP/1.1" 401 5357
+Unauthorized: /api/
+"GET /api/ HTTP/1.1" 401 5041
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+C:\Users\Me\Desktop\RH\backend\notifications\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\rh_management\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\rh_management\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\rh_management\urls.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\rh_management\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\rh_management\urls.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\rh_management\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\rh_management\urls.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\rh_management\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/?id=aa4a1285-26e4-42bb-9165-19d55a688042&vscodeBrowserReqId=1755718145225 HTTP/1.1" 200 6814
+"GET /api/ HTTP/1.1" 200 6421
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+C:\Users\Me\Desktop\RH\backend\rh_management\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/ HTTP/1.1" 200 6421
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"GET /api/ HTTP/1.1" 200 6421
+"GET /api/ HTTP/1.1" 200 6421
+"GET /api/ HTTP/1.1" 200 6421
+"GET /api/ HTTP/1.1" 200 6421
+"GET /api/ HTTP/1.1" 200 6421
+"GET /api/ HTTP/1.1" 200 6421
+"GET /api/ HTTP/1.1" 200 6421
+Not Found: /
+"GET / HTTP/1.1" 404 3242
+Not Found: /
+"GET / HTTP/1.1" 404 3242
+"GET /api/ HTTP/1.1" 200 6421
+"GET /api/ HTTP/1.1" 200 6421
+"GET /api/?id=aa4a1285-26e4-42bb-9165-19d55a688042&vscodeBrowserReqId=1755719457326 HTTP/1.1" 200 6814
+"GET /api/ HTTP/1.1" 200 6421
+"GET /api/ai/status/ HTTP/1.1" 200 6025
+Method Not Allowed: /api/ai/analyze/
+"GET /api/ai/analyze/ HTTP/1.1" 405 5656
+Method Not Allowed: /api/ai/bulk-analyze/
+"GET /api/ai/bulk-analyze/ HTTP/1.1" 405 5822
+"OPTIONS /api/ai/analyze/ HTTP/1.1" 200 5886
+"OPTIONS /api/ai/analyze/ HTTP/1.1" 200 5886
+"OPTIONS /api/ai/analyze/ HTTP/1.1" 200 5886
+C:\Users\Me\Desktop\RH\backend\ai_analysis\urls.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/ai/analyze/ HTTP/1.1" 200 766
+"POST /api/ai/analyze/ HTTP/1.1" 200 766
+"POST /api/ai/analyze/ HTTP/1.1" 200 766
+"POST /api/ai/analyze/ HTTP/1.1" 200 766
+"POST /api/ai/analyze/ HTTP/1.1" 200 766
+"POST /api/ai/analyze/ HTTP/1.1" 200 766
+"POST /api/ai/analyze/ HTTP/1.1" 200 766
+"POST /api/ai/analyze/ HTTP/1.1" 200 766
+"POST /api/ai/analyze/ HTTP/1.1" 200 929
+"POST /api/ai/analyze/ HTTP/1.1" 200 764
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/ai/analyze/ HTTP/1.1" 200 913
+"POST /api/ai/analyze/ HTTP/1.1" 200 913
+"POST /api/ai/analyze/ HTTP/1.1" 200 738
+"POST /api/ai/analyze/ HTTP/1.1" 200 738
+"POST /api/ai/analyze/ HTTP/1.1" 200 913
+"POST /api/ai/analyze/ HTTP/1.1" 200 893
+"POST /api/ai/analyze/ HTTP/1.1" 200 746
+"POST /api/ai/analyze/ HTTP/1.1" 200 922
+"POST /api/ai/analyze/ HTTP/1.1" 200 922
+"POST /api/ai/analyze/ HTTP/1.1" 200 913
+"POST /api/ai/analyze/ HTTP/1.1" 200 893
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/ai/bulk-analyze/ HTTP/1.1" 200 19659
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 52
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 52
+"GET /api/jobs/ HTTP/1.1" 200 52
+Watching for file changes with StatReloader
+"GET /api/jobs/categories/ HTTP/1.1" 200 13066
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"OPTIONS /api/jobs/ HTTP/1.1" 200 0
+Unauthorized: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 401 58
+Unauthorized: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 401 58
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 829
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/ HTTP/1.1" 200 52
+"OPTIONS /api/jobs/ HTTP/1.1" 200 0
+Unauthorized: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 401 188
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 829
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+Unauthorized: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 401 188
+Internal Server Error: /api/ai/bulk-analyze/
+"POST /api/ai/bulk-analyze/ HTTP/1.1" 500 105
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"POST /api/ai/bulk-analyze/ HTTP/1.1" 200 7938
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 829
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"POST /api/jobs/ HTTP/1.1" 201 363
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"POST /api/jobs/ HTTP/1.1" 201 356
+"GET /api/jobs/ HTTP/1.1" 200 52
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"POST /api/jobs/ HTTP/1.1" 201 395
+"GET /api/jobs/ HTTP/1.1" 200 755
+"GET /api/jobs/ HTTP/1.1" 200 755
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 1429
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1429
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 829
+- Broken pipe from ('127.0.0.1', 59810)
+- Broken pipe from ('127.0.0.1', 59811)
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 1429
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1429
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 1429
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1429
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"OPTIONS /api/ai/analyze-job-cvs/ HTTP/1.1" 200 0
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 7551
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 21798
+Internal Server Error: /api/ai/analyze-job-cvs/
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 500 105
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 22402
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 16572
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/ai/bulk-analyze/ HTTP/1.1" 200 21649
+"GET /api/jobs/ HTTP/1.1" 200 1429
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1429
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"POST /api/jobs/ HTTP/1.1" 201 2059
+"GET /api/jobs/ HTTP/1.1" 200 3850
+C:\Users\Me\Desktop\RH\backend\jobs\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 26495
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 84
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 84
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 84
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 84
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 3850
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 3850
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 3850
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 52
+"GET /api/jobs/ HTTP/1.1" 200 3850
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"POST /api/jobs/ HTTP/1.1" 201 388
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 17876
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 25714
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 23920
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 829
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 2437
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 3903
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 4537
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 2437
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 609
+"POST /api/jobs/ HTTP/1.1" 201 573
+"GET /api/jobs/ HTTP/1.1" 200 5480
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 1192
+"POST /api/jobs/ HTTP/1.1" 201 410
+"GET /api/jobs/ HTTP/1.1" 200 6198
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 1115
+"POST /api/ai/bulk-analyze/ HTTP/1.1" 200 16091
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6198
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6198
+"POST /api/jobs/ HTTP/1.1" 201 354
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 23075

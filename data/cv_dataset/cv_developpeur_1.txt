@@ -1,0 +1,44 @@
+CURRICULUM VITAE
+
+Jean MARTIN
+Développeur Full Stack
+
+CONTACT:
+Email: jean.martin@email.com
+Téléphone: 01 23 45 67 89
+Adresse: Paris, France
+
+EXPÉRIENCE PROFESSIONNELLE:
+
+Développeur Senior - TechCorp (2019-2024) - 5 ans
+• Développement d'applications web avec React et Node.js
+• Conception d'APIs REST avec Django et PostgreSQL
+• Intégration de solutions d'intelligence artificielle
+• Gestion d'équipe de 3 développeurs juniors
+• Méthodologie Agile et Scrum
+
+Développeur Junior - WebSolutions (2017-2019) - 2 ans
+• Développement frontend avec HTML, CSS, JavaScript
+• Intégration de maquettes responsive
+• Tests unitaires et debugging
+
+COMPÉTENCES TECHNIQUES:
+• Langages: Python, JavaScript, Java, SQL
+• Frameworks: Django, React, Angular, Vue.js
+• Bases de données: PostgreSQL, MySQL, MongoDB
+• Outils: Git, Docker, Jenkins, AWS
+• Méthodologies: Agile, Scrum, DevOps
+
+FORMATION:
+Master en Informatique - Université Pierre et Marie Curie (2017)
+Licence en Informatique - Université Paris-Sud (2015)
+
+PROJETS:
+• Plateforme e-commerce avec 10k+ utilisateurs
+• Application mobile de gestion RH
+• Système de recommandation par machine learning
+
+LANGUES:
+Français: Langue maternelle
+Anglais: Courant (TOEIC 850)
+Espagnol: Intermédiaire

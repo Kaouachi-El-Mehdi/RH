@@ -1,0 +1,43 @@
+Sarah TECHNICIENNE
+Développeuse Python & Data Science
+
+CONTACT:
+Sarah Technicienne
+Email: sarah.tech@gmail.com
+Mobile: 06 12 34 56 78
+LinkedIn: linkedin.com/in/sarah-tech
+
+EXPÉRIENCE:
+
+Data Scientist - DataCorp (2020-2024) - 4 ans
+• Développement de modèles de machine learning avec Python
+• Analyse de données massives avec Pandas et NumPy
+• Création de dashboards avec Tableau et PowerBI
+• Mise en production de modèles avec Docker et Kubernetes
+• Collaboration avec équipes métier pour définir les KPIs
+
+Développeuse Backend - StartupTech (2018-2020) - 2 ans
+• Développement API REST avec Django et Flask
+• Optimisation de bases de données PostgreSQL
+• Intégration de services cloud AWS
+• Tests automatisés et déploiement continu
+
+COMPÉTENCES TECHNIQUES:
+• Python (expert): Django, Flask, FastAPI, Pandas, NumPy, Scikit-learn
+• Machine Learning: TensorFlow, PyTorch, XGBoost
+• Bases de données: PostgreSQL, MongoDB, Redis
+• Cloud: AWS (EC2, S3, RDS), Docker, Kubernetes
+• Outils: Git, Jenkins, Jupyter, VS Code
+
+FORMATION:
+Master Data Science - École Polytechnique (2018)
+École d'ingénieur - ENSIMAG Grenoble (2016)
+
+PROJETS:
+• Système de recommandation e-commerce (Python, TensorFlow)
+• Prédiction de churn clients (Machine Learning)
+• API de traitement d'images (Computer Vision)
+
+CERTIFICATIONS:
+AWS Certified Solutions Architect
+Google Cloud Professional Data Engineer
