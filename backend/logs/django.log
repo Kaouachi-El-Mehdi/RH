@@ -387,3 +387,581 @@ Watching for file changes with StatReloader
 "POST /api/jobs/ HTTP/1.1" 201 354
 "GET /api/jobs/ HTTP/1.1" 200 6858
 "POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 23075
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 188
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 188
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 829
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"OPTIONS /api/ai/analyze-job-cvs/ HTTP/1.1" 200 0
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 18136
+C:\Users\Me\Desktop\RH\backend\rh_management\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"OPTIONS /api/ai/analyze-job-cvs/ HTTP/1.1" 200 0
+Internal Server Error: /api/ai/analyze-job-cvs/
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 500 105
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+Internal Server Error: /api/ai/analyze-job-cvs/
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 500 105
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 665
+Internal Server Error: /api/ai/analyze-job-cvs/
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 500 105
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 5667
+Internal Server Error: /api/ai/analyze-job-cvs/
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 500 105
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 21792
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+Internal Server Error: /api/ai/analyze-job-cvs/
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 500 105
+Internal Server Error: /api/ai/analyze-job-cvs/
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 500 105
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\ai_analysis\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/ai/analyze-job-cvs/
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 500 1596
+C:\Users\Me\Desktop\RH\backend\rh_management\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\rh_management\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 29654
+"POST /api/ai/bulk-analyze/ HTTP/1.1" 200 45457
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"POST /api/ai/bulk-analyze/ HTTP/1.1" 200 142633
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"POST /api/ai/analyze-job-cvs/ HTTP/1.1" 200 146127
+C:\Users\Me\Desktop\RH\backend\candidates\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\candidates\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+Watching for file changes with StatReloader
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+"POST /api/auth/login/ HTTP/1.1" 200 829
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+Bad Request: /api/auth/register/
+"POST /api/auth/register/ HTTP/1.1" 400 118
+"POST /api/auth/register/ HTTP/1.1" 201 1173
+"POST /api/auth/login/ HTTP/1.1" 200 1160
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"OPTIONS /api/jobs/ HTTP/1.1" 200 0
+"OPTIONS /api/jobs/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 210
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 211
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 211
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 211
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+- Broken pipe from ('127.0.0.1', 60121)
+"POST /api/auth/login/ HTTP/1.1" 200 1160
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3293
+Not Found: /api/categories
+"GET /api/categories HTTP/1.1" 404 3302
+Not Found: /ap
+"GET /ap HTTP/1.1" 404 3266
+"GET /api/ HTTP/1.1" 200 6421
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Not Found: /api/category
+"GET /api/category HTTP/1.1" 404 3296
+C:\Users\Me\Desktop\RH\backend\jobs\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\jobs\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/category
+"GET /api/category HTTP/1.1" 404 3296
+Not Found: /api/category/
+"GET /api/category/ HTTP/1.1" 404 3299
+Not Found: /api/category/
+"GET /api/category/ HTTP/1.1" 404 3299
+Not Found: /api/category/
+"GET /api/category/ HTTP/1.1" 404 3299
+Not Found: /api/category/
+"GET /api/category/ HTTP/1.1" 404 3299
+C:\Users\Me\Desktop\RH\backend\jobs\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+Not Found: /api/categories/
+"GET /api/categories/ HTTP/1.1" 404 3305
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 13066
+"GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 211
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 211
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 211
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"POST /api/jobs/ HTTP/1.1" 201 433
+"GET /api/jobs/ HTTP/1.1" 200 7622
+"GET /api/jobs/ HTTP/1.1" 200 7622
+"POST /api/jobs/ HTTP/1.1" 201 422
+"GET /api/jobs/ HTTP/1.1" 200 8327
+"GET /api/jobs/ HTTP/1.1" 200 8327
+"GET /api/jobs/ HTTP/1.1" 200 8327
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 8327
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 8327
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 8327
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 8327
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 8327
+"GET /api/jobs/ HTTP/1.1" 200 8327
+"OPTIONS /api/jobs/10/ HTTP/1.1" 200 0
+"DELETE /api/jobs/10/ HTTP/1.1" 204 0
+"OPTIONS /api/jobs/9/ HTTP/1.1" 200 0
+"DELETE /api/jobs/9/ HTTP/1.1" 204 0
+"OPTIONS /api/jobs/8/ HTTP/1.1" 200 0
+Not Found: /api/jobs/8/
+"DELETE /api/jobs/8/ HTTP/1.1" 404 25
+Not Found: /api/jobs/8/
+"DELETE /api/jobs/8/ HTTP/1.1" 404 25
+Not Found: /api/jobs/8/
+"DELETE /api/jobs/8/ HTTP/1.1" 404 25
+Not Found: /api/jobs/8/
+"DELETE /api/jobs/8/ HTTP/1.1" 404 25
+"OPTIONS /api/jobs/1/ HTTP/1.1" 200 0
+Not Found: /api/jobs/1/
+"DELETE /api/jobs/1/ HTTP/1.1" 404 25
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+Not Found: /api/jobs/1/
+"DELETE /api/jobs/1/ HTTP/1.1" 404 25
+"OPTIONS /api/jobs/3/ HTTP/1.1" 200 0
+Not Found: /api/jobs/3/
+"DELETE /api/jobs/3/ HTTP/1.1" 404 25
+Not Found: /api/jobs/8/
+"DELETE /api/jobs/8/ HTTP/1.1" 404 25
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"OPTIONS /api/jobs/7/ HTTP/1.1" 200 0
+Not Found: /api/jobs/7/
+"DELETE /api/jobs/7/ HTTP/1.1" 404 25
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"OPTIONS /api/jobs/6/ HTTP/1.1" 200 0
+Not Found: /api/jobs/6/
+"DELETE /api/jobs/6/ HTTP/1.1" 404 25
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"POST /api/jobs/ HTTP/1.1" 201 430
+"GET /api/jobs/ HTTP/1.1" 200 7564
+"OPTIONS /api/jobs/11/ HTTP/1.1" 200 0
+"DELETE /api/jobs/11/ HTTP/1.1" 204 0
+"OPTIONS /api/jobs/4/ HTTP/1.1" 200 0
+Not Found: /api/jobs/4/
+"DELETE /api/jobs/4/ HTTP/1.1" 404 25
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 6858
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/auth/profile/ HTTP/1.1" 200 636
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 52
+Bad Request: /api/jobs/
+"POST /api/jobs/ HTTP/1.1" 400 52
+"POST /api/jobs/ HTTP/1.1" 201 763
+"GET /api/jobs/ HTTP/1.1" 200 1146
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 188
+Unauthorized: /api/auth/profile/
+"GET /api/auth/profile/ HTTP/1.1" 401 188
+"OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 84
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 84
+"POST /api/auth/login/ HTTP/1.1" 200 829
+- Broken pipe from ('127.0.0.1', 49342)
+- Broken pipe from ('127.0.0.1', 49341)
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/auth/profile/ HTTP/1.1" 200 305
+"GET /api/jobs/ HTTP/1.1" 200 1146
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1146
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1146
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1146
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"OPTIONS /api/jobs/12/ HTTP/1.1" 200 0
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Not Found: /api/jobs/12/
+"PATCH /api/jobs/12/ HTTP/1.1" 404 25
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 84
+Bad Request: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 400 84
+"OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+"POST /api/auth/register/ HTTP/1.1" 201 1139
+"POST /api/auth/login/ HTTP/1.1" 200 1126
+"OPTIONS /api/jobs/ HTTP/1.1" 200 0
+"OPTIONS /api/jobs/ HTTP/1.1" 200 0
+- Broken pipe from ('127.0.0.1', 50294)
+"GET /api/auth/profile/ HTTP/1.1" 200 602
+"GET /api/auth/profile/ HTTP/1.1" 200 602
+"GET /api/jobs/ HTTP/1.1" 200 1146
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1146
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1146
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1146
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 1146
+"POST /api/jobs/ HTTP/1.1" 201 1071
+"GET /api/jobs/ HTTP/1.1" 200 2531
+"OPTIONS /api/jobs/13/ HTTP/1.1" 200 0
+Internal Server Error: /api/jobs/13/
+Traceback (most recent call last):
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\generics.py", line 288, in patch
+    return self.partial_update(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\mixins.py", line 67, in update
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\Me\Desktop\RH\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 1148, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'recent_applications' was declared on serializer JobDetailSerializer, but has not been included in the 'fields' option.
+"PATCH /api/jobs/13/ HTTP/1.1" 500 168664
+C:\Users\Me\Desktop\RH\backend\jobs\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Me\Desktop\RH\backend\jobs\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/auth/profile/ HTTP/1.1" 200 602
+- Broken pipe from ('127.0.0.1', 51200)
+- Broken pipe from ('127.0.0.1', 51206)
+- Broken pipe from ('127.0.0.1', 51205)
+"POST /api/auth/login/ HTTP/1.1" 200 1126
+- Broken pipe from ('127.0.0.1', 51227)
+"GET /api/auth/profile/ HTTP/1.1" 200 602
+"GET /api/jobs/ HTTP/1.1" 200 2531
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 2531
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/auth/profile/ HTTP/1.1" 200 602
+"GET /api/jobs/ HTTP/1.1" 200 2531
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"GET /api/jobs/ HTTP/1.1" 200 2531
+"GET /api/jobs/categories/ HTTP/1.1" 200 2163
+"PATCH /api/jobs/13/ HTTP/1.1" 200 2162
+"GET /api/jobs/ HTTP/1.1" 200 2531

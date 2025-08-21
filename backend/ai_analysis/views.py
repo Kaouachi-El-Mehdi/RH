@@ -297,61 +297,60 @@ def analyze_job_cvs(request):
         
         analyses = []
         skills_keywords = [skill.strip().lower() for skill in required_skills.split(',') if skill.strip()]
-        
-        for cv_file in cv_files:
-            try:
-                # Vérifier le format
-                file_extension = os.path.splitext(cv_file.name)[1].lower()
-                if file_extension not in ['.pdf', '.docx', '.doc', '.txt']:
-                    continue
 
-                # Traiter le fichier
-                with tempfile.NamedTemporaryFile(delete=False, suffix=file_extension) as temp_file:
-                    for chunk in cv_file.chunks():
-                        temp_file.write(chunk)
-                    temp_file_path = temp_file.name
-
+        def process_batch(batch_files):
+            batch_analyses = []
+            for cv_file in batch_files:
                 try:
-                    text = analyzer.processor.extract_text(temp_file_path)
-                    if text:
-                        # Analyse de base du CV
-                        analysis = analyzer.analyze_cv(text)
-                        analysis['filename'] = cv_file.name
+                    file_extension = os.path.splitext(cv_file.name)[1].lower()
+                    if file_extension not in ['.pdf', '.docx', '.doc', '.txt']:
+                        continue
 
-                        # Calcul du score de correspondance avec le poste
-                        candidate_experience = analysis.get('experience_years', 0)
-                        required_min, required_max = parse_experience_range(experience_required)
-                        # Strict filter: only include CVs whose experience is within the required range
-                        if required_max >= 10:
-                            # For '10+', only include CVs with 10 years or more
-                            if candidate_experience < 10:
-                                continue
-                        else:
-                            # For ranges, only include CVs within [min, max]
-                            if candidate_experience < required_min or candidate_experience > required_max:
-                                continue
+                    with tempfile.NamedTemporaryFile(delete=False, suffix=file_extension) as temp_file:
+                        for chunk in cv_file.chunks():
+                            temp_file.write(chunk)
+                        temp_file_path = temp_file.name
 
-                        job_match_score = calculate_job_match_score(
-                            text.lower(), 
-                            skills_keywords, 
-                            job_description.lower(),
-                            job_requirements.lower(),
-                            experience_required,
-                            candidate_experience
-                        )
-                        analysis['job_match_score'] = job_match_score
+                    try:
+                        text = analyzer.processor.extract_text(temp_file_path)
+                        if text:
+                            analysis = analyzer.analyze_cv(text)
+                            analysis['filename'] = cv_file.name
 
-                        analyses.append(analysis)
-                finally:
-                    # Nettoyer le fichier temporaire
-                    if os.path.exists(temp_file_path):
-                        os.unlink(temp_file_path)
+                            candidate_experience = analysis.get('experience_years', 0)
+                            required_min, required_max = parse_experience_range(experience_required)
+                            if required_max >= 10:
+                                if candidate_experience < 10:
+                                    continue
+                            else:
+                                if candidate_experience < required_min or candidate_experience > required_max:
+                                    continue
 
-            except Exception as e:
-                logger.error(f"Erreur lors de l'analyse de {cv_file.name}: {e}")
-                continue
+                            job_match_score = calculate_job_match_score(
+                                text.lower(), 
+                                skills_keywords, 
+                                job_description.lower(),
+                                job_requirements.lower(),
+                                experience_required,
+                                candidate_experience
+                            )
+                            analysis['job_match_score'] = job_match_score
 
-        # Trier les candidats par score de correspondance
+                            batch_analyses.append(analysis)
+                    finally:
+                        if os.path.exists(temp_file_path):
+                            os.unlink(temp_file_path)
+
+                except Exception as e:
+                    logger.error(f"Erreur lors de l'analyse de {cv_file.name}: {e}")
+                    continue
+            return batch_analyses
+
+        batch_size = 50
+        for i in range(0, len(cv_files), batch_size):
+            batch_files = cv_files[i:i+batch_size]
+            analyses.extend(process_batch(batch_files))
+
         ranked_candidates = sorted(analyses, key=lambda x: x.get('job_match_score', 0), reverse=True)
 
         return Response({
@@ -367,9 +366,12 @@ def analyze_job_cvs(request):
         })
         
     except Exception as e:
-        logger.error(f"Erreur lors de l'analyse des CV pour le poste: {e}")
+        import traceback
+        tb = traceback.format_exc()
+        logger.error(f"Erreur lors de l'analyse des CV pour le poste: {e}\n{tb}")
         return Response({
-            'error': f'Erreur lors de l\'analyse: {str(e)}'
+            'error': f'Erreur lors de l\'analyse: {str(e)}',
+            'traceback': tb
         }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 

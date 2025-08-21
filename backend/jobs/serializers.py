@@ -87,6 +87,9 @@ class JobDetailSerializer(JobSerializer):
     category = JobCategorySerializer(read_only=True)
     recent_applications = serializers.SerializerMethodField()
 
+    class Meta(JobSerializer.Meta):
+        fields = JobSerializer.Meta.fields + ['recent_applications']
+
     def get_recent_applications(self, obj):
         """Retourne les 5 dernières candidatures"""
         from candidates.serializers import ApplicationSerializer

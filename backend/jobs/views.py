@@ -11,6 +11,23 @@ from .serializers import (
     JobStatsSerializer
 )
 
+class JobCategoryListView(generics.ListAPIView):
+    queryset = JobCategory.objects.filter(is_active=True).order_by('name')
+    serializer_class = JobCategorySerializer
+    permission_classes = [permissions.AllowAny]
+from rest_framework import generics, status, permissions
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated, AllowAny
+from django.db.models import Q, Count
+from django.utils import timezone
+from .models import Job, JobCategory, JobSkill
+from .serializers import (
+    JobSerializer, JobDetailSerializer, JobCreateSerializer,
+    JobCategorySerializer, JobSkillSerializer, JobSearchSerializer,
+    JobStatsSerializer
+)
+
 
 class JobListView(generics.ListCreateAPIView):
     """

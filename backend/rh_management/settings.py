@@ -196,12 +196,13 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
 
 # File upload settings
-FILE_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
-DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
+FILE_UPLOAD_MAX_MEMORY_SIZE = 100 * 1024 * 1024  # 100MB
+DATA_UPLOAD_MAX_MEMORY_SIZE = 100 * 1024 * 1024  # 100MB
+DATA_UPLOAD_MAX_NUMBER_FILES = 1000  # Allow more files per upload
 
 # Allowed file types for CV uploads
 ALLOWED_CV_EXTENSIONS = ['.pdf', '.doc', '.docx']
-MAX_CV_FILE_SIZE = 5 * 1024 * 1024  # 5MB
+MAX_CV_FILE_SIZE = 10 * 1024 * 1024  # 10MB
 
 # AI Model configuration
 AI_MODEL_CONFIG = {
