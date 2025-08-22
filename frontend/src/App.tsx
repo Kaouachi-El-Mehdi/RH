@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { NotificationProvider } from './contexts/NotificationContext';
 import AuthForm from './components/AuthForm';
 import Layout, { TabName } from './components/Layout';
 import JobManagement from './components/JobManagement';
@@ -161,7 +162,9 @@ function AppContent() {
 function App() {
   return (
     <AuthProvider>
-      <AppContent />
+      <NotificationProvider>
+        <AppContent />
+      </NotificationProvider>
     </AuthProvider>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import NotificationBell from './NotificationBell';
 import { useAuth } from '../contexts/AuthContext';
 import './Layout.css';
 
@@ -55,6 +56,8 @@ const Layout: React.FC<LayoutProps> = ({ activeTab, onTabChange, children }) => 
         <header className="header bg-primary text-white d-flex align-items-center justify-content-between px-4 py-2">
           <h4 className="mb-0">{navItems.find(i => i.key === activeTab)?.label}</h4>
           <div className="d-flex align-items-center">
+            {/* Notification Bell (always visible) */}
+            <NotificationBell />
             <span className="me-3">
               <strong>{user?.first_name} {user?.last_name}</strong> <span className="badge bg-light text-primary ms-2">{user?.role}</span>
             </span>

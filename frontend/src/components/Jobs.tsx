@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
+import { Modal } from 'react-bootstrap';
 
 interface Job {
   id: number;
@@ -12,6 +13,8 @@ interface Job {
   salary_max: number;
   description: string;
 }
+
+const API_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000/api';
 
 const Jobs: React.FC = () => {
   const [categories, setCategories] = useState<{ id: number; name: string }[]>([]);
@@ -47,6 +50,84 @@ const Jobs: React.FC = () => {
   const [editJob, setEditJob] = useState<Job | null>(null);
   const [showEditModal, setShowEditModal] = useState(false);
   const [editFormData, setEditFormData] = useState<any>({});
+
+  // Add CV analysis modal state
+  const [showCVModal, setShowCVModal] = useState(false);
+  const [selectedJobForCV, setSelectedJobForCV] = useState<Job | null>(null);
+  const [cvFiles, setCVFiles] = useState<FileList | null>(null);
+  const [cvAnalysisResults, setCVAnalysisResults] = useState<any>(null);
+  const [cvAnalysisLoading, setCVAnalysisLoading] = useState(false);
+  const [cvAnalysisError, setCVAnalysisError] = useState<string | null>(null);
+
+    // Application modal state
+    const [showApplyModal, setShowApplyModal] = useState(false);
+    const [selectedJobForApply, setSelectedJobForApply] = useState<Job | null>(null);
+    const [applyForm, setApplyForm] = useState({
+      cv_file: null as File | null,
+      cover_letter: '',
+      poste_title: '',
+      entreprise: '',
+    });
+    const [applyLoading, setApplyLoading] = useState(false);
+    const [applyError, setApplyError] = useState<string | null>(null);
+    const [applySuccess, setApplySuccess] = useState<string | null>(null);
+
+    const handleOpenApplyModal = (job: Job) => {
+      setSelectedJobForApply(job);
+      setShowApplyModal(true);
+      setApplyForm({ cv_file: null, cover_letter: '', poste_title: '', entreprise: '' });
+      setApplyError(null);
+      setApplySuccess(null);
+    };
+
+    const handleApplyInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      const { name, value } = e.target;
+      setApplyForm(prev => ({ ...prev, [name]: value }));
+    };
+
+    const handleApplyCVFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      setApplyForm(prev => ({ ...prev, cv_file: e.target.files ? e.target.files[0] : null }));
+    };
+
+    const handleApplySubmit = async (e: React.FormEvent) => {
+      e.preventDefault();
+      if (!applyForm.cv_file) {
+        setApplyError('Veuillez sélectionner un fichier CV.');
+        return;
+      }
+      setApplyLoading(true);
+      setApplyError(null);
+      setApplySuccess(null);
+      try {
+        const formData = new FormData();
+      formData.append('job', String(selectedJobForApply?.id));
+      formData.append('cv_file', applyForm.cv_file);
+      formData.append('cover_letter', applyForm.cover_letter);
+      const response = await fetch(`${API_URL}/candidates/applications/create/`, {
+          method: 'POST',
+          headers: token ? { Authorization: `Bearer ${token}` } : {},
+          body: formData,
+        });
+        if (!response.ok) {
+          let errText = '';
+          try {
+            const err = await response.json();
+            errText = JSON.stringify(err);
+          } catch (e) {
+            errText = await response.text();
+          }
+          setApplyError('Erreur lors de la soumission: ' + errText);
+          setApplyLoading(false);
+          return;
+        }
+        setApplySuccess('Candidature envoyée avec succès !');
+        setApplyLoading(false);
+        setShowApplyModal(false);
+      } catch (error: any) {
+        setApplyError('Erreur lors de la soumission: ' + error.message);
+        setApplyLoading(false);
+      }
+    };
 
   // Charger les catégories
   useEffect(() => {
@@ -224,6 +305,56 @@ const Jobs: React.FC = () => {
       setError('Erreur serveur');
     } finally {
       setLoading(false);
+    }
+  };
+
+  // Add handler to open CV modal
+  const handleOpenCVModal = (job: any) => {
+    setSelectedJobForCV(job);
+    setShowCVModal(true);
+    setCVAnalysisResults(null);
+    setCVAnalysisError(null);
+  };
+
+  // Add handler for file input
+  const handleCVFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCVFiles(e.target.files);
+  };
+
+  // Update CV analysis submit for analyze_job_cvs endpoint
+  const handleCVAnalysisSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedJobForCV || !cvFiles || cvFiles.length === 0) return;
+    setCVAnalysisLoading(true);
+    setCVAnalysisError(null);
+    setCVAnalysisResults(null);
+    try {
+      const formData = new FormData();
+      formData.append('job_id', String(selectedJobForCV.id));
+      formData.append('job_title', selectedJobForCV.title);
+      formData.append('job_description', selectedJobForCV.description);
+      formData.append('job_requirements', (selectedJobForCV as any).requirements || '');
+      formData.append('required_skills', (selectedJobForCV as any).skills_required || '');
+      formData.append('experience_required', selectedJobForCV.experience_required);
+      for (let i = 0; i < cvFiles.length; i++) {
+        formData.append('files', cvFiles[i]);
+      }
+      const response = await fetch(`${API_URL}/ai/analyze-job-cvs/`, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+      if (!response.ok) {
+        throw new Error('Erreur lors de l’analyse des CV');
+      }
+      const data = await response.json();
+      setCVAnalysisResults(data);
+    } catch (err: any) {
+      setCVAnalysisError(err.message || 'Erreur serveur');
+    } finally {
+      setCVAnalysisLoading(false);
     }
   };
 
@@ -454,8 +585,46 @@ const Jobs: React.FC = () => {
                   <p className="card-text">{job.description}</p>
 
                   {user?.role === 'candidat' && (
-                    <button className="btn btn-outline-primary btn-sm">Postuler</button>
+                    <button className="btn btn-outline-primary btn-sm" onClick={() => handleOpenApplyModal(job)}>
+                      Postuler
+                    </button>
                   )}
+      {/* Application Modal */}
+      <Modal show={showApplyModal} onHide={() => setShowApplyModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Postuler à l'offre</Modal.Title>
+        </Modal.Header>
+        <form onSubmit={handleApplySubmit} encType="multipart/form-data">
+          <Modal.Body>
+            {applyError && <div className="alert alert-danger">{applyError}</div>}
+            {applySuccess && <div className="alert alert-success">{applySuccess}</div>}
+            <div className="mb-3">
+              <label className="form-label">CV</label>
+              <input type="file" name="cv_file" accept=".pdf,.doc,.docx" className="form-control" onChange={handleApplyCVFileChange} required />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Lettre de motivation</label>
+              <textarea name="cover_letter" className="form-control" value={applyForm.cover_letter} onChange={handleApplyInputChange} rows={4} placeholder="Saisissez votre lettre de motivation..." />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Intitulé de poste</label>
+              <input type="text" name="poste_title" className="form-control" value={applyForm.poste_title} onChange={handleApplyInputChange} placeholder="Ex Post" />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Entreprise</label>
+              <input type="text" name="entreprise" className="form-control" value={applyForm.entreprise} onChange={handleApplyInputChange} placeholder="Entreprise" />
+            </div>
+          </Modal.Body>
+          <Modal.Footer>
+            <button type="button" className="btn btn-secondary" onClick={() => setShowApplyModal(false)}>
+              Annuler
+            </button>
+            <button type="submit" className="btn btn-primary" disabled={applyLoading}>
+              {applyLoading ? 'Envoi...' : 'Envoyer la candidature'}
+            </button>
+          </Modal.Footer>
+        </form>
+      </Modal>
 
                   {(user?.role === 'admin' || user?.role === 'recruteur') && (
                     <>
@@ -467,6 +636,9 @@ const Jobs: React.FC = () => {
                         onClick={() => handleDeleteJob(job.id)}
                       >
                         Supprimer
+                      </button>
+                      <button className="btn btn-info btn-sm ms-2" onClick={() => handleOpenCVModal(job)}>
+                        Analyser les CV
                       </button>
                     </>
                   )}
@@ -566,6 +738,63 @@ const Jobs: React.FC = () => {
             </div>
           </div>
         </div>
+      )}
+
+      {showCVModal && (
+        <Modal show={showCVModal} onHide={() => setShowCVModal(false)}>
+          <Modal.Header closeButton>
+            <Modal.Title>Analyse IA des CV pour: {selectedJobForCV?.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <form onSubmit={handleCVAnalysisSubmit}>
+              <div className="mb-3">
+                <label htmlFor="cvFiles" className="form-label">Sélectionner les CV (PDF, DOCX, etc.)</label>
+                <input type="file" id="cvFiles" multiple className="form-control" accept=".pdf,.doc,.docx,.txt" onChange={handleCVFileChange} />
+              </div>
+              <button type="submit" className="btn btn-primary" disabled={cvAnalysisLoading}>
+                {cvAnalysisLoading ? 'Analyse en cours...' : 'Analyser'}
+              </button>
+            </form>
+            {cvAnalysisError && <div className="alert alert-danger mt-3">{cvAnalysisError}</div>}
+            {cvAnalysisResults && (
+              <div className="mt-3">
+                <h5>Résultats de l’analyse</h5>
+                {/* Remove raw JSON results display */}
+                {/* Cool Top CVs Ranking */}
+                {cvAnalysisResults?.ranked_candidates && (
+                  <div className="mt-4">
+                    <h5 className="mb-3 text-primary">🏆 Top CVs pour ce poste</h5>
+                    <div className="row g-3">
+                      {cvAnalysisResults.ranked_candidates.slice(0, 10).map((candidate: any, idx: number) => (
+                        <div className="col-12 mb-3" key={idx}>
+                          <div className="card border-0 shadow-lg rounded-4 position-relative" style={{maxWidth: '600px', margin: '0 auto'}}>
+                            <span className="position-absolute top-0 end-0 badge bg-gradient bg-info text-dark fs-6" style={{borderRadius: '0 1rem 0 1rem'}}>
+                              #{idx + 1}
+                            </span>
+                            <div className="card-body">
+                              <div className="d-flex justify-content-between align-items-center mb-2">
+                                <span className="fw-bold fs-5 text-success">{candidate.filename.replace('.pdf','')}</span>
+                                <span className="badge bg-success fs-6">Score: {candidate.job_match_score?.toFixed(1) || candidate.quality_score?.toFixed(1)}</span>
+                              </div>
+                              <div className="mb-2">
+                                <span className="text-secondary">Compétences:</span>
+                                <span className="ms-2 text-dark">{candidate.skills?.length ? candidate.skills.join(', ') : 'Aucune'}</span>
+                              </div>
+                              <div>
+                                <span className="text-secondary">Expérience:</span>
+                                <span className="ms-2 text-dark">{candidate.experience_years} ans</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+          </Modal.Body>
+        </Modal>
       )}
     </div>
   );

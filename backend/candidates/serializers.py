@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Application
 
 class ApplicationSerializer(serializers.ModelSerializer):
+    candidate = serializers.PrimaryKeyRelatedField(read_only=True)
     candidate_name = serializers.CharField(source='candidate.full_name', read_only=True)
     job_title = serializers.CharField(source='job.title', read_only=True)
 

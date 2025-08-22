@@ -220,23 +220,6 @@ const AuthForm: React.FC<AuthFormProps> = ({ onSuccess }) => {
           </p>
         </div>
 
-        <div className="demo-accounts">
-          <h4>🧪 Comptes de démonstration</h4>
-          <div className="demo-grid">
-            <div className="demo-card">
-              <strong>👑 Admin</strong>
-              <p>admin@rh.com / admin123</p>
-            </div>
-            <div className="demo-card">
-              <strong>🏢 Recruteur</strong>
-              <p>recruteur@rh.com / recruteur123</p>
-            </div>
-            <div className="demo-card">
-              <strong>👤 Candidat</strong>
-              <p>candidat@rh.com / candidat123</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
